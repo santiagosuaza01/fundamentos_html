@@ -1,0 +1,23 @@
+#contImagen {
+  width: 100%;
+  text-align: center;
+}
+
+#btnRegistro {
+  width: 8rem;
+  background-color: rgb(17, 132, 233);
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#formulario {
+margin: top 50px;
+margin-left: 20px;
+  padding: 0rem;
+}
+
+#formulario2 {
+  margin-left: 10cm;
+  margin-top: -2%;
+}
