@@ -1,7 +1,21 @@
-//FUNCION PARA MANIPULAR EL DOM
-function cambiarImagen(params) {
-    document.getElementById("img1").src = ("https://image.goat.com/750/attachments/product_template_pictures/images/060/556/759/original/815560_00.png.png")
+//FUNCIÓN PARA MANIPULAR EL DOM
+function cambiarImagen() {
+  let alt = document.getElementById("img1").alt;
+  if (alt == "img1") {
+    document.getElementById("img1").src =
+      "https://image.goat.com/750/attachments/product_template_pictures/images/060/556/759/original/815560_00.png.png";
+    document.getElementById("img1").alt = "img2";
+  } else {
+    document.getElementById("img1").src =
+      "https://image.goat.com/750/attachments/product_template_pictures/images/060/172/882/original/CZ4149_400.png.png";
+    document.getElementById("img1").alt = "img1";
+  }
 }
+
+
+
+
+
 
 
 
@@ -25,9 +39,9 @@ function sumar(num1, num2) {
   return num1 + num2;
 }
 
-let funcionFlecha =()=>{
-    console.log("esto es una funcion flecha")
-}
+let funcionFlecha = () => {
+  console.log("esto es una funcion flecha");
+};
 
 /*************CICLOS*********/
 for (let i = 0; i < 10; i++) {
@@ -45,9 +59,9 @@ personas.forEach((element) => {
 console.log("------While-------");
 let contador = 0;
 while (contador < personas.length) {
-    console.log(personas[contador]);
-    ++contador;
-    if (contador==2){
-        console.log("terminando recorrido")
-    }
+  console.log(personas[contador]);
+  ++contador;
+  if (contador == 2) {
+    console.log("terminando recorrido");
+  }
 }

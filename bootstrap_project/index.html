@@ -20,6 +20,12 @@
     </script>
     <!----------LLAMAR AL ARCHIVO "functions.js"----------->
     <script src="functions.js"> </script>
+    <script src="characters.js"></script>
+    <script>
+        getCharacters();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
@@ -68,18 +74,37 @@
         </div>
     </nav>
     <!------fin de la barra de navegacion------->
-    <!------esto es una tarjeta ------->
 
-    <div class="card" style="width: 18rem;">
-        <img id="img1" src="https://image.goat.com/750/attachments/product_template_pictures/images/060/172/882/original/CZ4149_400.png.png"
-            class="card-img-top" alt="img1">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary" onclick="cambiarImagen()" >Actualizar</a>
+    <!-----cabecera------>
+    <div id="cabecera">
+        <div id="texto">
+            <h1>Futurama</h1>
+            <span>Consulta los personajes</span>
+            <div id="imgCabecera"></div>
+
         </div>
     </div>
+
+
+
+    <!------esto es una tarjeta ------->
+    <div id="contImg">
+        <div class="card" style="width: 18rem;">
+            <img id="img1"
+                src="https://image.goat.com/750/attachments/product_template_pictures/images/060/172/882/original/CZ4149_400.png.png"
+                class="card-img-top" alt="img1">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn btn-primary" onclick="cambiarImagen()">Actualizar</a>
+            </div>
+        </div>
+
+
+    </div>
+
 
 
 </body>
